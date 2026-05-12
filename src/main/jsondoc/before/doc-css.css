@@ -9,6 +9,7 @@
   flex-direction: row;
   font-family: arial;
   color: #d1d1d1;
+  overflow: auto;
 }
 
 .aboutMeLeft {
@@ -192,6 +193,7 @@ a:hover {
 	overflow: auto;
 	flex-direction: row;
 	color: #e3e3e3;
+	min-width: 30dvw;
 }
 
 .projectsSideProjectsAndSearch {
