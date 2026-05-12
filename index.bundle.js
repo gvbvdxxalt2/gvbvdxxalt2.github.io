@@ -4,7 +4,7 @@
 /***/ 596
 (module) {
 
-module.exports = ".contentMain {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100dvw;\n  height: 100dvh;\n  background: #6e6e6e;\n  display: flex;\n  flex-direction: row;\n  font-family: arial;\n  color: #d1d1d1;\n}\n\n.aboutMeLeft {\n  width: 30dvw;\n  min-width: 480px;\n  height: 100%;\n  flex-shrink: 0;\n  flex-grow: 0;\n  background: #5e5e5e;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  display: flex;\n  flex-direction: column;\n}\n\n.aboutMeProfileName {\n  display: flex;\n\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: column;\n  flex-wrap: wrap;\n  gap: 20px;\n\n  height: fit-content;\n  box-sizing: border-box;\n  font-size: 20px;\n  width: 100%;\n  background: rgb(10, 10, 10);\n  color: rgb(255, 255, 255);\n  padding: 30px 20px;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n}\n\n.aboutMeProfileTop {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  align-items: center;\n  flex-direction: row;\n  gap: 20px;\n}\n\n.aboutMeProfileLinks {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 6px;\n}\n\n.profilePicture {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 1);\n  border-style: solid;\n  border-width: 3px;\n  border-color: rgba(170, 170, 170, 1);\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileName {\n  font-weight: bold;\n  font-size: 30px;\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileCategories {\n  width: 100%;\n  height: fit-content;\n  overflow: scroll;\n  box-sizing: border-box;\n  border-radius: 3px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  align-items: center;\n  display: flex;\n  gap: 2px;\n}\n\n.profileCategoryTab {\n\twidth: fit-content;\n\theight: 45px;\n\tpadding: 5px 5px;\n\tbox-sizing: border-box;\n\tborder-radius: 2px;\n\tfont-weight: bold;\n\tbackground: #474747;\n\tcolor: #9c9c9c;\n\tdisplay: flex;\n\talign-items: center;\n\tflex-direction: row;\n\tcursor: default;\n\ttext-decoration: unset;\n\tflex-wrap: none;\n\ttext-wrap: none;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n}\n\n.profileCategoryTab:hover {\n\ttext-decoration: underline;\n\tcursor: pointer;\n}\n\n.profileCategoryTab[selected] {\n\tcursor: default;\n\tcolor: #d6d6d6;\n\tbackground: #8a8a8a;\n\ttext-decoration: unset;\n}\n\n.profileCategoryTab > span {\n\tuser-select: none;\n\twebkit-user-select: none;\n}\n\n.profileStoryContent {\n\tdisplay: block;\n\tflex-grow: 1;\n\tflex-shrink: 1;\n\twidth: 100%;\n\toverflow: auto;\n}\n\na {\n\tall: unset;\n\tcursor: default;\n\tfont-family: arial;\n\tcolor: #0092d1;\n}\n\na:hover {\n\tcursor: pointer;\n\ttext-decoration: underline;\n\tcolor: #00a6ed;\n}\n\n.creatorSocialLink {\n  all: unset;\n  display: block;\n  padding: 5px 5px;\n  border-radius: 5px;\n  height: 30px;\n  margin-right: 5px;\n  background: rgba(255, 255, 255, 0.5);\n  box-sizing: border-box;\n}\n\n.creatorSocialLink > img {\n  user-select: none;\n  -moz-user-select: none;\n  -webkit-user-drag: none;\n  transition: 0.15s;\n}\n\n.creatorSocialLink:hover > img {\n  transform: scale(1.07);\n}\n\n.creatorSocialLink > img {\n\theight: 100%;\n}\n\n.creatorSocialLink:hover {\n  cursor: pointer;\n  background: rgba(255, 255, 255, 0.7);\n}\n\n\n.projectsSide {\n\tdisplay: flex;\n\tflex-grow: 1;\n\toverflow: auto;\n\tflex-direction: row;\n\tcolor: #e3e3e3;\n}\n\n.projectsSideProjectsAndSearch {\n\tdisplay: flex;\n\tbox-sizng: border-box;\n\tflex-grow: 1;\n\toverflow: auto;\n\tflex-direction: column;\n}\n\n.searchProjectsContainer {\n\tdisplay: flex;\n\theight: fit-content;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tflex-direction: row;\n\talign-items: center;\n\tbackground: #383838;\n\tfont-size: 15px;\n\tpadding: 2px 2px;\n}\n.searchProjectsInput {\n\tall: unset;\n\tcolor: rgb(0,0,0);\n\tbackground: rgb(255,255,255);\n\tborder-style: solid;\n\tborder-width: 2px;\n\tborder-color: rgb(100,100,100);\n\tpadding: 3px 3px;\n\tdisplay: flex;\n\tflex-grow: 1;\n\tbox-sizing: border-box;\n\tborder-radius: 5px;\n\ttransition: 0.2s border-color;\n}\n.searchProjectsInput:focus {\n\tborder-color: rgb(0,100,255);\n}\n\n.projectsList {\n\tdisplay: flex;\n\tflex-grow: 1;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n\tgap: 2px;\n\toverflow: auto;\n}\n\n.projectContainer {\n\tdisplay: flex;\n}\n\n.project {\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex-grow: 1;\n\talign-items: center;\n\tbackground-color: #919191;\n\tjustify-content: center;\n\tgap: 2px;\n\tpadding: 5px 5px;\n\tborder-radius: 3px;\n\ttransition: 0.1s;\n\tmax-width: 500px;\n\tmax-height: 400px;\n\tborder-style: solid;\n\tborder-width: 4px;\n\tborder-color: rgba(0,0,0,0);\n}\n.project:hover {\n\tcursor: pointer;\n\tbackground-color: #dbdbdb;\n\tborder-color: rgba(0, 0, 0, 0.553);\n}\n\n.project > span {\n\tcolor: rgba(0,0,0,0.5);\n\tfont-weight: bold;\n\tuser-select: none;\n\tpointer-events: none;\n\tfont-size: 20px;\n}\n.project:hover > span {\n\tcolor: rgba(83, 83, 83, 0.5);\n}\n.project > img {\n\tmax-width: 350px;\n\theight: 250px;\n\tmin-width: 250px;\n\tobject-fit: contain;\n\tpointer-events: none;\n\tuser-select: none;\n\tborder-radius: 5px;\n}\n\n.projectInformation {\n\tdisplay: flex;\n\tflex-direction: column;\n}";
+module.exports = ".contentMain {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100dvw;\n  height: 100dvh;\n  background: #6e6e6e;\n  display: flex;\n  flex-direction: row;\n  font-family: arial;\n  color: #d1d1d1;\n}\n\n.aboutMeLeft {\n  width: 30dvw;\n  min-width: 480px;\n  height: 100%;\n  flex-shrink: 0;\n  flex-grow: 0;\n  background: #5e5e5e;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  display: flex;\n  flex-direction: column;\n}\n\n.aboutMeProfileName {\n  display: flex;\n\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: column;\n  flex-wrap: wrap;\n  gap: 20px;\n\n  height: fit-content;\n  box-sizing: border-box;\n  font-size: 20px;\n  width: 100%;\n  background: rgb(10, 10, 10);\n  color: rgb(255, 255, 255);\n  padding: 30px 20px;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n}\n\n.aboutMeProfileTop {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  align-items: center;\n  flex-direction: row;\n  gap: 20px;\n}\n\n.aboutMeProfileLinks {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 6px;\n}\n\n.profilePicture {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 1);\n  border-style: solid;\n  border-width: 3px;\n  border-color: rgba(170, 170, 170, 1);\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileName {\n  font-weight: bold;\n  font-size: 30px;\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileCategories {\n  width: 100%;\n  height: fit-content;\n  overflow: scroll;\n  box-sizing: border-box;\n  border-radius: 3px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  align-items: center;\n  display: flex;\n  gap: 2px;\n}\n\n.profileCategoryTab {\n\twidth: fit-content;\n\theight: 45px;\n\tpadding: 5px 5px;\n\tbox-sizing: border-box;\n\tborder-radius: 2px;\n\tfont-weight: bold;\n\tbackground: #474747;\n\tcolor: #9c9c9c;\n\tdisplay: flex;\n\talign-items: center;\n\tflex-direction: row;\n\tcursor: default;\n\ttext-decoration: unset;\n\tflex-wrap: none;\n\ttext-wrap: none;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n}\n\n.profileCategoryTab:hover {\n\ttext-decoration: underline;\n\tcursor: pointer;\n}\n\n.profileCategoryTab[selected] {\n\tcursor: default;\n\tcolor: #d6d6d6;\n\tbackground: #8a8a8a;\n\ttext-decoration: unset;\n}\n\n.profileCategoryTab > span {\n\tuser-select: none;\n}\n\n.profileStoryContent {\n\tdisplay: block;\n\tflex-grow: 1;\n\tflex-shrink: 1;\n\twidth: 100%;\n\toverflow: auto;\n}\n\na {\n\tall: unset;\n\tcursor: default;\n\tfont-family: arial;\n\tcolor: #0092d1;\n}\n\na:hover {\n\tcursor: pointer;\n\ttext-decoration: underline;\n\tcolor: #00a6ed;\n}\n\n.creatorSocialLink {\n  all: unset;\n  display: block;\n  padding: 5px 5px;\n  border-radius: 5px;\n  height: 30px;\n  margin-right: 5px;\n  background: rgba(255, 255, 255, 0.5);\n  box-sizing: border-box;\n}\n\n.creatorSocialLink > img {\n  user-select: none;\n  -moz-user-select: none;\n  -webkit-user-drag: none;\n  transition: 0.15s;\n}\n\n.creatorSocialLink:hover > img {\n  transform: scale(1.07);\n}\n\n.creatorSocialLink > img {\n\theight: 100%;\n}\n\n.creatorSocialLink:hover {\n  cursor: pointer;\n  background: rgba(255, 255, 255, 0.7);\n}\n\n\n.projectsSide {\n\tdisplay: flex;\n\tflex-grow: 1;\n\toverflow: auto;\n\tflex-direction: row;\n\tcolor: #e3e3e3;\n}\n\n.projectsSideProjectsAndSearch {\n\tdisplay: flex;\n\tbox-sizing: border-box;\n\tflex-grow: 1;\n\toverflow: auto;\n\tflex-direction: column;\n}\n\n.searchProjectsContainer {\n\tdisplay: flex;\n\theight: fit-content;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tflex-direction: row;\n\talign-items: center;\n\tbackground: #383838;\n\tfont-size: 15px;\n\tpadding: 2px 2px;\n}\n.searchProjectsInput {\n\tall: unset;\n\tcolor: rgb(0,0,0);\n\tbackground: rgb(255,255,255);\n\tborder-style: solid;\n\tborder-width: 2px;\n\tborder-color: rgb(100,100,100);\n\tpadding: 3px 3px;\n\tdisplay: flex;\n\tflex-grow: 1;\n\tbox-sizing: border-box;\n\tborder-radius: 5px;\n\ttransition: 0.2s border-color;\n}\n.searchProjectsInput:focus {\n\tborder-color: rgb(0,100,255);\n}\n\n.projectsList {\n\tdisplay: flex;\n\tflex-grow: 1;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n\tgap: 2px;\n\toverflow: auto;\n}\n\n.projectContainer {\n\tdisplay: flex;\n}\n\n.project {\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex-grow: 1;\n\talign-items: center;\n\tbackground-color: #919191;\n\tjustify-content: center;\n\tgap: 2px;\n\tpadding: 5px 5px;\n\tborder-radius: 3px;\n\ttransition: 0.1s;\n\tmax-width: 500px;\n\tmax-height: 400px;\n\tborder-style: solid;\n\tborder-width: 4px;\n\tborder-color: rgba(0,0,0,0);\n}\n.project:hover {\n\tcursor: pointer;\n\tbackground-color: #dbdbdb;\n\tborder-color: rgba(0, 0, 0, 0.553);\n}\n\n.project > span {\n\tcolor: rgba(0,0,0,0.5);\n\tfont-weight: bold;\n\tuser-select: none;\n\tpointer-events: none;\n\tfont-size: 20px;\n}\n.project:hover > span {\n\tcolor: rgba(83, 83, 83, 0.5);\n}\n.project > img {\n\tmax-width: 350px;\n\theight: 250px;\n\tmin-width: 250px;\n\tobject-fit: contain;\n\tpointer-events: none;\n\tuser-select: none;\n\tborder-radius: 5px;\n}\n\n.projectInformation {\n\tdisplay: flex;\n\tflex-direction: column;\n\tpadding: 4px 4px;\n}\n\n.projectInformationName {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\tpadding: 2px 2px;\n\tfont-weight: bold;\n\tfont-size: 20px;\n}\n\n.projectInformationImage {\n\tmax-width: 350px;\n\theight: 250px;\n\tmin-width: 250px;\n\tobject-fit: contain;\n\tpointer-events: none;\n\tuser-select: none;\n\tborder-radius: 5px;\n}\n\n.projectInformationDescription {\n\tdisplay: block;\n\tfont-size: 15px;\n\twidth: 100%;\n\tflex-grow: 1;\n\tflex-shrink: 1;\n\toverflow: auto;\n}";
 
 /***/ },
 
@@ -14,15 +14,35 @@ module.exports = ".contentMain {\n  position: fixed;\n  top: 0;\n  left: 0;\n  w
 //Webpack compatible version of elements module from gvbvdxx-pack-2
 //With some new updates as well.
 var __GP_elements = {};
+/**
+ * Gets if the element is a DOM element.
+ * @param {Element} Obj The object to check.
+ * @returns {Boolean} `true` or `false`.
+ */
 function isDOM(Obj) {
   return Obj instanceof Element;
 }
+
+/**
+ * elements library that was used in "gvbvdxx-pack-2", but modified for webpack.
+ */
 var elements = {
+  /**
+   * Appends all the Elements in the array to the specified Element
+   * @param {Element} elm The Element to append the array of Elements.
+   * @param {Array} appendArray The Array of Elements to append to the Element
+   */
   appendElements: function (elm, appendArray) {
     for (var appendElm of appendArray) {
       elm.append(appendElm);
     }
   },
+  
+  /**
+   * This gets an A element object with an "all: unset;" property, passable to the JSON the Element parser.
+   * @param {Object} props Additional properties for the A element object.
+   * @returns {Object} The A element object created
+   */
   getStylelessAJSON(props = {}) {
     return {
       element: "a",
@@ -32,20 +52,47 @@ var elements = {
       ...props,
     };
   },
+
+  /**
+   * Removes all children from an Element, probably doesn't work for textContent or innerHTML.
+   * @param {Element} elm The Element to remove children from.
+   */
   removeAllChildren: function (elm) {
     Array.from(elm.children).forEach((elm) => elm.remove());
   },
+
+  /**
+   * Parses an array of JSON element objects into Elements, then appends them to the Element provided to the elm property.
+   * Using the "gid" property on an JSON element object can store an parsed JSON element, and you can later call `getGPId` to get the element.
+   * @param {Element} elm The target Element to do the action on.
+   * @param {Array} appendJSONArray Array of JSON element objects to parse and append.
+   * @returns {Array} Array of parsed JSON element objects that were appended.
+   */
   appendElementsFromJSON: function (elm, appendJSONArray) {
     var elms = elements.createElementsFromJSON(appendJSONArray);
     elements.appendElements(elm, elms);
     return elms;
   },
+
+  /**
+   * Same as `appendElementsFromJSON`, but removes all the children of the target before appending the new parsed Elements.
+   * Safer than setting innerHTML on an Element.
+   * @param {Element} elm The target Element to do the action on.
+   * @param {Array} appendJSONArray Array of JSON element objects to parse and append.
+   * @returns {Array} Array of parsed JSON element objects that were appended.
+   */
   setInnerJSON: function (elm, appendJSONArray) {
     elements.removeAllChildren(elm);
     var elms = elements.createElementsFromJSON(appendJSONArray);
     elements.appendElements(elm, elms);
     return elms;
   },
+
+  /**
+   * Parses an array of JSON element objects into Elements.
+   * @param {Array} jsonelmArray Array of JSON element objects.
+   * @returns {Array} Array of Elements.
+   */
   createElementsFromJSON: function (jsonelmArray) {
     //converts an array of json's with element properties to a element list.
     function runElements(arry) {
@@ -179,25 +226,60 @@ var elements = {
     }
     return runElements(jsonelmArray);
   },
+
+  /**
+   * Function wrapper around `document.getElementById`.
+   * @param {String} id The Elements to find.
+   * @returns {Element} The Element found, but can return undefined or null if not found.
+   */
   getById: function (id) {
     return document.getElementById(id);
   },
+
+  /**
+   * Stores an element without setting an ID property, this makes it harder to find in inspect, but also benefits with speed.
+   * @param {Element} el The element to store.
+   * @param {String} id The ID to store it as.
+   * @returns {Element} The element that was stored.
+   */
   setGPId: function (el, id) {
     __GP_elements[id] = el;
     return el;
   },
+
+  /**
+   * Unlinks an stored element's GPId, this doesn't remove the actual ID property from it or calls `remove()` on the element.
+   * @param {*} id 
+   */
   disposeGPId: function (id) {
-    __GP_elements[id] = undefined;
+    __GP_elements[id] = "";
+    delete __GP_elements[id];
   },
+
+  /**
+   * Returns the element found that has an GPId set. On the parser, use the "gid" property to set to this, or call `setGPId` instead.
+   * @param {String} id The GPId that was assigned to the element.
+   * @returns {Element} Element or null if not found.
+   */
   getGPId: function (id) {
     if (__GP_elements[id]) {
       return __GP_elements[id];
     }
     return null;
   },
+
+  /**
+   * Variable that holds `document.body`.
+   */
   body: document.body,
+
+  /**
+   * Internal variable used for the GPId list.
+   */
   __GP_elements: __GP_elements,
 };
+
+
 module.exports = elements;
 
 
@@ -417,6 +499,50 @@ refreshProfileCategories();
 
 /***/ },
 
+/***/ 936
+(module, __unused_webpack_exports, __webpack_require__) {
+
+var elements = __webpack_require__(255);
+var projectInformationContainer = elements.getGPId("projectInformationContainer");
+
+var content = __webpack_require__(930);
+var allProjects = content.projects;
+
+var activeProject = null;
+
+function renderProjectInformation(project) {
+    if (!activeProject) {
+        projectInformationContainer.hidden = false; //This is hidden on load since we let the user pick the project they want to view.
+    }
+    activeProject = project;
+
+    var projectImageObj = {
+        element: "img",
+        src: project.thumbnail,
+        className: "projectInformationImage",
+    };
+
+    var projectNameObj = {
+        element: "span",
+        dangerouslySetInnerHTML: project.label,
+        className: "projectInformationName",
+    };
+
+    var arr = [projectImageObj,projectNameObj];
+    elements.setInnerJSON(projectInformationContainer, arr);
+}
+
+function handleProjectClick(event, project) {
+    renderProjectInformation(project);
+}
+
+module.exports = {
+    renderProjectInformation,
+    handleProjectClick
+};
+
+/***/ },
+
 /***/ 184
 (__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
@@ -436,6 +562,8 @@ function debounce(a, time) {
 
 var content = __webpack_require__(930);
 var allProjects = content.projects;
+
+var {handleProjectClick} = __webpack_require__(936);
 
 function getProjectsToRender() {
 	return allProjects;
@@ -491,6 +619,14 @@ function renderProject(project) {
 			{
 				element: "span",
 				dangerouslySetInnerHTML: project.label
+			}
+		],
+		eventListeners: [
+			{
+				event: "click",
+				func: function (event) {
+					handleProjectClick(event,project);
+				}
 			}
 		]
 	};
@@ -642,6 +778,21 @@ module.exports = [
 
 /***/ },
 
+/***/ 249
+(module) {
+
+module.exports = [
+    {
+		element: "div",
+		className: "projectInformation",
+		gid: "projectInformationContainer",
+		hidden: true,
+		children: []
+	}
+];
+
+/***/ },
+
 /***/ 43
 (module) {
 
@@ -696,13 +847,8 @@ module.exports = [
 			
 		]
 	},
-	{
-		element: "div",
-		className: "projectInformation",
-		gid: "projectInformationContainer",
-		hidden: true,
-		children: []
-	}
+
+	...__webpack_require__(249)
 ];
 
 
