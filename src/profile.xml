@@ -1,4 +1,5 @@
 <xml id="profileXML">
+    <%= require('./parts/header-meta.xml') %>
     <projects>
         <!--Random Rants +-->
         <project>
@@ -19,6 +20,9 @@
                 <tag>school</tag>
                 <tag>meme</tag>
                 <tag>memes</tag>
+                <tag>funny</tag>
+                <tag>chromebooks</tag>
+                <tag>school internet</tag>
             </tags>
             <description>
               This site I had made with and for a friend by sharing a Google

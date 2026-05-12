@@ -6,6 +6,26 @@ var allProjects = content.projects;
 
 var activeProject = null;
 
+function generateLinksForProject(project) {
+    return project.links.map((link) => {
+        return {
+            element: "a",
+            style: {
+                all: "unset"
+            },
+            href: link.href,
+            target: "_blank",
+            children: [
+                {
+                    element: "div",
+                    className: "projectInformationLink",
+                    textContent: link.label
+                }
+            ]
+        }
+    });
+}
+
 function renderProjectInformation(project) {
     if (!activeProject) {
         projectInformationContainer.hidden = false; //This is hidden on load since we let the user pick the project they want to view.
@@ -24,7 +44,32 @@ function renderProjectInformation(project) {
         className: "projectInformationName",
     };
 
-    var arr = [projectImageObj,projectNameObj];
+    
+    var projectLinksHeaderObj = {
+        element: "div",
+        className: "projectInformationLinksHeader",
+        textContent: "🔗 Links:"
+    };
+
+    var projectLinksObj = {
+        element: "div",
+        className: "projectInformationLinks",
+        children: generateLinksForProject(project)
+    };
+    
+    var projectLinksContainerObj = {
+        element: "div",
+        className: "projectInformationLinksContainer",
+        children: [projectLinksHeaderObj,projectLinksObj]
+    };
+
+    var projectDescriptionObj = {
+        element: "div",
+        className: "projectInformationDescription",
+        dangerouslySetInnerHTML: project.description
+    };
+
+    var arr = [projectImageObj,projectNameObj,projectLinksContainerObj,projectDescriptionObj];
     elements.setInnerJSON(projectInformationContainer, arr);
 }
 

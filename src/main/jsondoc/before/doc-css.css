@@ -209,9 +209,11 @@ a:hover {
 	flex-grow: 0;
 	flex-direction: row;
 	align-items: center;
-	background: #383838;
+	background: rgba(0,0,0,0.5);
 	font-size: 15px;
 	padding: 2px 2px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 .searchProjectsInput {
 	all: unset;
@@ -232,6 +234,7 @@ a:hover {
 }
 
 .projectsList {
+	position: relative;
 	display: flex;
 	flex-grow: 1;
 	flex-direction: row;
@@ -243,7 +246,6 @@ a:hover {
 .projectContainer {
 	display: flex;
 }
-
 .project {
 	display: flex;
 	flex-direction: column;
@@ -290,7 +292,12 @@ a:hover {
 .projectInformation {
 	display: flex;
 	flex-direction: column;
-	padding: 4px 4px;
+	padding: 2px 2px;
+	max-width: 400px;
+	min-width: 300px;
+	align-items: center;
+	background: rgba(0,0,0,0.5);
+	overflow: auto;
 }
 
 .projectInformationName {
@@ -312,6 +319,54 @@ a:hover {
 	border-radius: 5px;
 }
 
+.projectInformationLinksContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 100%;
+	width: fit-content;
+	height: fit-content;
+	gap: 3px;
+	padding: 5px 5px;
+	box-sizing: border-box;
+}
+
+.projectInformationLinksHeader {
+	font-weight: bold;
+	text-wrap: nowrap;
+}
+
+.projectInformationLinks {
+	display: flex;
+	flex-grow: 1;
+	overflow: auto;
+	flex-direction: row;
+	gap: 2px;
+}
+
+.projectInformationLink {
+	display: flex;
+	align-items: center;
+	background: rgb(36, 90, 161);
+	color: rgba(255,255,255,0.8);
+	border-radius: 5px;
+	font-weight: bold;
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	width: fit-content;
+	height: fit-content;
+	flex-wrap: nowrap;
+	text-wrap: nowrap;
+}
+
+.projectInformationLink:hover {
+	text-decoration: underline;
+	background: rgb(64, 108, 165);
+	cursor: pointer;
+}
+
 .projectInformationDescription {
 	display: block;
 	font-size: 15px;
@@ -319,4 +374,20 @@ a:hover {
 	flex-grow: 1;
 	flex-shrink: 1;
 	overflow: auto;
+}
+
+.noProjectsFoundError {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	background: rgba(255,255,255,0.5);
+	color: rgb(0,0,0);
+	padding: 10px 10px;
+	border-radius: 5px;
+}
+
+.noProjectsFoundErrorHeader {
+	font-size: 20px;
+	font-weight: bold;
 }

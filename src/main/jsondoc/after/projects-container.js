@@ -26,7 +26,7 @@ function getSearchableText(string) {
 
 	s = s.toLowerCase(); //No case sensitivity.
 
-	//Filter out any charactars that aren't needed for searching.
+	//Filter out any characters that aren't needed for searching.
 	var i = 0;
 	var allowedChars = "abcdefghijklmnopqrstuvwxyz1234567890";
 	var s2 = "";
@@ -92,6 +92,28 @@ function renderProject(project) {
 
 function renderProjects(projects) {
 	elements.setInnerJSON(projectsListDiv, projects.map(renderProject));
+	if (projects.length == 0) {
+		elements.setInnerJSON(projectsListDiv, [
+			{
+				element: "div",
+				className: "noProjectsFoundError",
+				children: [
+					{
+						element: "span",
+						textContent: "🔍😕 Huh?",
+						className: "noProjectsFoundErrorHeader"
+					},
+					{
+						element: "br"
+					},
+					{
+						element: "span",
+						textContent: "No projects found or exist, maybe try changing your search query, or I don't have that project availible here."
+					}
+				]
+			}
+		]);
+	}
 }
 
 function refreshProjects() {
