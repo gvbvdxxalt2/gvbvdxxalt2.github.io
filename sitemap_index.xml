@@ -17,4 +17,34 @@
       <loc>https://gvbvdxx.me/sitemaps/srb2web.xml</loc>
       <lastmod>2026-05-12</lastmod>
    </sitemap>
+
+   <!--Gvbvdxx Game Maker 3-->
+   <sitemap>
+      <loc>https://gvbvdxx.me/sitemaps/ggm3.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
+
+   <!--Gvbvdxx Game Maker-->
+   <sitemap>
+      <loc>https://gvbvdxx.me/sitemaps/ggm.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
+
+   <!--Gvbvdxx Script Maker-->
+   <sitemap>
+      <loc>https://gvbvdxx.me/sitemaps/maker.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
+
+   <!--Gvbvdxx Games-->
+   <sitemap>
+      <loc>https://gvbvdxx.me/sitemaps/oldgames.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
+
+   <!--Gvbvdxx Sonic Engine-->
+   <sitemap>
+      <loc>https://gvbvdxx.me/sitemaps/gvbsonic.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
 </sitemapindex>
