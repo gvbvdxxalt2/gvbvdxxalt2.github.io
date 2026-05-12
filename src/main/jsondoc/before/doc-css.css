@@ -13,7 +13,7 @@
 
 .aboutMeLeft {
   width: 30dvw;
-  min-width: 480px;
+  min-width: 300px;
   height: 100%;
   flex-shrink: 0;
   flex-grow: 0;
@@ -293,11 +293,15 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	padding: 2px 2px;
-	max-width: 400px;
+	max-width: 500px;
+	width: fit-content;
 	min-width: 300px;
 	align-items: center;
 	background: rgba(0,0,0,0.5);
 	overflow: auto;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	flex-grow: 0;
 }
 
 .projectInformationName {
