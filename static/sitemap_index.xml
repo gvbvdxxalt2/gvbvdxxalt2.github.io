@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!--Main domain-->
+   <sitemap>
+      <loc>https://gvbvdxx.me/sitemap.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
+
+   <!--Random Rants +-->
+   <sitemap>
+      <loc>https://randomrants-plus.gvbvdxx.me/sitemap.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
+
+   <!--SRB2 web-->
+   <sitemap>
+      <loc>https://gvbvdxx.me/sitemaps/srb2web.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
+</sitemapindex>

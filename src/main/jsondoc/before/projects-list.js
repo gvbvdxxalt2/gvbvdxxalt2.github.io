@@ -3,6 +3,7 @@ module.exports = [
 		element: "div",
 		className: "projectsSide",
 		gid: "projectsContainer",
+		//This text was here for the development
 	    //textContent: "🧑‍💻 Project list is coming soon! 🛠",
 		children: [
 			
@@ -17,11 +18,18 @@ module.exports = [
 						element: "div",
 						className: "projectsList",
 						gid: "projectsListDiv"
-					}
+					},
 					
 				]
 			}
 			
 		]
-	}	
+	},
+	{
+		element: "div",
+		className: "projectInformation",
+		gid: "projectInformationContainer",
+		hidden: true,
+		children: []
+	}
 ];

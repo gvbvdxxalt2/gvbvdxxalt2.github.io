@@ -1,0 +1,50 @@
+<div id="searchEngineLinks">
+    <!--Links for search engines to read-->
+    <!--DON'T include anything that doesn't need to be public, such as internal apis.-->
+
+    <div>
+        <h1>Gvbvdxx's social media links</h1>
+        <p>
+            <a href="https://youtube.com/@gvbvdxx">Gvbvdxx's Youtube</a>
+            <a href="https://gvbvdxx.itch.io">Gvbvdxx's Itch.io</a>
+            <a href="https://github.com/gvbvdxxalt2">Gvbvdxx's Current Github</a>
+            <a href="https://github.com/gvbvdxx">Gvbvdxx's Inactive Github</a>
+            <a href="https://github.com/jasonglenevans">Gvbvdxx's Oldest Inactive Github</a>
+            <a href="https://discord.com/users/1160668172228247623">Gvbvdxx's Discord</a>
+        </p>
+        <h1>Additional links</h1>
+        <p>
+            <a href="https://stats.uptimerobot.com/a0xrFFxOH1">Uptime status for domain.</a>
+        </p>
+    </div>
+
+    <!--Project links-->
+    <div>
+        <h1>Project links</h1>
+        <p>
+            <a href="https://randomrants-plus.gvbvdxx.me">Random Rants +</a>
+            <a href="https://ggm3.gvbvdxx.me">Gvbvdxx Game Maker 3</a>
+            <a href="https://ggm.gvbvdxx.me">Gvbvdxx Game Maker</a>
+            <a href="https://gvbsonic.gvbvdxx.me">Gvbsonic (Gvbvdxx Sonic Engine)</a>
+            <a href="https://maker.gvbvdxx.me">Gvbvdxx Script Maker</a>
+            <a href="https://oldgames.gvbvdxx.me">Gvbvdxx Games</a>
+            <a href="https://srb2web.gvbvdxx.me">SRB2 web (with online multiplayer support)</a>
+        </p>
+    </div>
+
+    <!--Project images-->
+    <div>
+        <h1>Project images</h1>
+        <p>
+            <img src="images/thumbnails/gd-site-image.png" title="Gvbvdxx's Domain"/>
+
+            <img src="images/thumbnails/randomrants-plus.png" title="Random Rants +"/>
+            <img src="images/thumbnails/ggm3-logo.png" title="Gvbvdxx Game Maker 3"/>
+            <img src="images/thumbnails/ggm-logo.png" title="Gvbvdxx Game Maker"/>
+            <img src="images/thumbnails/gvbsonic-logo.png" title="Gvbsonic (Gvbvdxx Sonic Engine)"/>
+            <img src="images/thumbnails/gvbvdxx-script-maker.png" title="Gvbvdxx Script Maker"/>
+            <img src="images/thumbnails/gvbvdxx-games-logo.png" title="Gvbvdxx Games"/>
+            <img src="images/thumbnails/srb2web.png" title="SRB2 Web"/>
+        </p>
+    </div>
+</div>

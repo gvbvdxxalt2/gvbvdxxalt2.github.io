@@ -60,6 +60,7 @@ function renderProject(project) {
 	var content = {
 		element: "div",
 		className: "project",
+		title: "Click on this project to read more about it.",
 		children: [
 			{
 				element: "img",
