@@ -1,6 +1,38 @@
 <xml id="profileXML">
     <%= require('./parts/header-meta.xml') %>
     <projects>
+        <!--Gvbvdxx's Scratch project archive-->
+        <project>
+            <label>Gvbvdxx's Scratch project archive</label>
+            <thumbnail src="images/thumbnails/scratch-archive.png"/>
+            <tags>
+                <tag>after-ban</tag>
+                <tag>ban</tag>
+                <tag>after</tag>
+                <tag>archive</tag>
+                <tag>scratch</tag>
+                <tag>sb3</tag>
+                <tag>blocked</tag>
+                <tag>after-block</tag>
+                <tag>after-blocked</tag>
+                <tag>scratch blocked</tag>
+                <tag>gvbvdxx</tag>
+            </tags>
+            <description>
+              An full archive of all my <a href="https://scratch.mit.edu" target="_blank">Scratch</a> projects, including the alt accounts as well!<br/>
+
+              Even has the famous "Scratch Sonic engine", which was used for some Sonic fangames on Scratch<br/>
+
+              Load the SB3 files on the <a href="https://scratch.mit.edu/projects/editor" target="_blank">Scratch project editor</a> or inside <a href="https://turbowarp.org" target="_blank">Turbowarp</a>.
+
+            </description>
+            <links>
+                <l goto="https://gvbvdxx.itch.io/archive"
+                >🎮 Itch.io</l>
+                <l goto="https://drive.google.com/drive/folders/1l0u70F4CqF_ndKYMYE6lb1rSgkNHILKb"
+                >📁 Google Drive direct link</l>
+            </links>
+        </project>
         <!--Random Rants +-->
         <project>
             <label>Random Rants +</label>
