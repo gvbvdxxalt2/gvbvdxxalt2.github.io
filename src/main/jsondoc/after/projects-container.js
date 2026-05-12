@@ -15,6 +15,8 @@ function debounce(a, time) {
 var content = require("../../content");
 var allProjects = content.projects;
 
+var {handleProjectClick} = require("./project-information.js");
+
 function getProjectsToRender() {
 	return allProjects;
 }
@@ -69,6 +71,14 @@ function renderProject(project) {
 			{
 				element: "span",
 				dangerouslySetInnerHTML: project.label
+			}
+		],
+		eventListeners: [
+			{
+				event: "click",
+				func: function (event) {
+					handleProjectClick(event,project);
+				}
 			}
 		]
 	};

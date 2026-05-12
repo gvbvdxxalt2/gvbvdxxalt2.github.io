@@ -131,7 +131,6 @@
 
 .profileCategoryTab > span {
 	user-select: none;
-	webkit-user-select: none;
 }
 
 .profileStoryContent {
@@ -197,7 +196,7 @@ a:hover {
 
 .projectsSideProjectsAndSearch {
 	display: flex;
-	box-sizng: border-box;
+	box-sizing: border-box;
 	flex-grow: 1;
 	overflow: auto;
 	flex-direction: column;
@@ -291,4 +290,33 @@ a:hover {
 .projectInformation {
 	display: flex;
 	flex-direction: column;
+	padding: 4px 4px;
+}
+
+.projectInformationName {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 2px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.projectInformationImage {
+	max-width: 350px;
+	height: 250px;
+	min-width: 250px;
+	object-fit: contain;
+	pointer-events: none;
+	user-select: none;
+	border-radius: 5px;
+}
+
+.projectInformationDescription {
+	display: block;
+	font-size: 15px;
+	width: 100%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	overflow: auto;
 }
