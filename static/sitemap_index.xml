@@ -47,4 +47,10 @@
       <loc>https://gvbvdxx.me/sitemaps/gvbsonic.xml</loc>
       <lastmod>2026-05-12</lastmod>
    </sitemap>
+
+   <!--Gvbvdxx Camera-->
+   <sitemap>
+      <loc>https://gvbvdxx.me/sitemaps/camera.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
 </sitemapindex>
