@@ -1,6 +1,11 @@
 //Webpack compatible version of elements module from gvbvdxx-pack-2
 //With some new updates as well.
+
+/**
+ * Internal variable used to store Elements with their IDs.
+ */
 var __GP_elements = {};
+
 /**
  * Gets if the element is a DOM element.
  * @param {Element} Obj The object to check.
@@ -116,7 +121,7 @@ var elements = {
                 } else if (attriName == "innerHTML") {
                   console.trace(
                     'Warning: The "innerHTML" property is deprecated. ' +
-                      'Please use "dangerouslySetInnerHTML" instead.',
+                      'Please use "dangerouslySetInnerHTML" instead with caution.',
                   );
                   realElm.innerHTML = attributeValue;
                   setattri = false;
